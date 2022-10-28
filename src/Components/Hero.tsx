@@ -6,8 +6,10 @@ const Hero = () => {
           className={`author h-96 w-[220px] xs:w-[250px] ss:w-[350px] sm:w-[650px]`}
         />
         <div className="max-w-sm p-4">
-          <h1 className="text-4xl font-black text-white">I am Al Nickelzon.</h1>
-          <p className="text-xl">
+          <h1 className="pulse text-4xl font-black text-white">
+            I am Al Nickelzon.
+          </h1>
+          <p className="animation-in-3s text-xl">
             Self taught React Developer. Graphic Designer. Over-caffeinated
             human.
           </p>
