@@ -1,5 +1,5 @@
-import NavLinks from "../Links";
-import { menuopen, menuclose } from "../Assets";
+import NavLinks from "../Links/index";
+import { menuopen, menuclose } from "../Assets/index";
 import { useState } from "react";
 
 const NavigationBar = () => {
