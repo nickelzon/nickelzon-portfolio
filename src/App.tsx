@@ -1,11 +1,21 @@
-import React from 'react'
+import React from "react";
+import NavigationBar from "./Components/NavigationBar";
+import Hero from "./Components/Hero";
 
 const App = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <div className="rootdiv h-[100vh] w-full">
+      <div className="navbar-and-maincontent-container">
+        <div>
+          <NavigationBar />
+        </div>
 
-export default App
+        <div>
+          <Hero />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default App;
