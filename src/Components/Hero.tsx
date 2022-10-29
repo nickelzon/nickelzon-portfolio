@@ -1,6 +1,10 @@
 import { authorphoto } from "../Assets";
 
-const Hero = () => {
+export interface Props {
+  herodesc: any;
+}
+
+const Hero = ({ herodesc }: Props) => {
   return (
     <div className="hero flex flex-col items-center justify-center p-20 font-questrial text-orange-500 sm:flex-row">
       <img
@@ -12,8 +16,8 @@ const Hero = () => {
         <h1 className="pulse text-4xl font-black text-white">
           I am Al Nickelzon.
         </h1>
-        <p className="animation-in-3s text-xl">
-          Self taught React Developer. Graphic Designer. Over-caffeinated human.
+        <p className="hero-description animation-in-3s text-xl">
+          {herodesc[0]}
         </p>
       </div>
     </div>

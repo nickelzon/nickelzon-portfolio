@@ -18,6 +18,7 @@
 
 .opacity {
   opacity: 0;
+  transition: 1s ease-in;
 }
 
 .opacity.active {
