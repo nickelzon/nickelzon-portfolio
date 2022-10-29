@@ -13,6 +13,9 @@ module.exports = {
       fontFamily: {
         questrial: ["Questrial"],
       },
+      colors: {
+        black: "#191919",
+      },
     },
   },
   plugins: [],

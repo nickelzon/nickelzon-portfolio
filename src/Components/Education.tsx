@@ -1,19 +1,9 @@
-const Education = () => {
-  const scroll = () => {
-    let elements = document.querySelectorAll(".opacity");
-    for (var i = 0; i < elements.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = elements[i].getBoundingClientRect().top;
-      var elementVisible = 150;
-      if (elementTop < windowHeight - elementVisible) {
-        elements[i].classList.add("active");
-      } else {
-        elements[i].classList.remove("active");
-      }
-    }
-  };
-  window.addEventListener("scroll", scroll);
-  scroll();
+export interface Props {
+  sheesh: any;
+}
+
+const Education = ({ sheesh }: Props) => {
+  sheesh();
 
   return (
     <div className="hero flex flex-col flex-wrap items-center p-5 font-questrial">
