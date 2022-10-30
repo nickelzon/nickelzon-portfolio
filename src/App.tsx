@@ -2,6 +2,7 @@ import NavigationBar from "./Components/NavigationBar";
 import Hero from "./Components/Hero";
 import Education from "./Components/Education";
 import Footer from "./Components/Footer";
+import Projects from "./Components/Projects";
 
 const App = () => {
   const herodesc: string[] = [
@@ -49,6 +50,7 @@ const App = () => {
         <div className="w-full">
           <Hero herodesc={herodesc} />
           <Education sheesh={scroll} />
+          <Projects />
           <Footer />
         </div>
       </div>
