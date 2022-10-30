@@ -3,7 +3,10 @@ export interface Props {
 }
 
 const Education = ({ sheesh }: Props) => {
-  sheesh();
+  const callfunc = () => {
+    sheesh(".opacity");
+  };
+  window.addEventListener("scroll", callfunc);
 
   return (
     <div className="hero flex flex-col flex-wrap items-center p-5 font-questrial">

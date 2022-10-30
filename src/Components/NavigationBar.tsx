@@ -1,5 +1,5 @@
 import NavLinks from "../Links/index";
-import { menuopen, menuclose } from "../Assets/index";
+import { menuopen, menuclose, logo } from "../Assets/index";
 import { useState } from "react";
 
 const NavigationBar = () => {
@@ -9,8 +9,8 @@ const NavigationBar = () => {
   return (
     <div className="bg-orange-700 p-5 font-questrial text-white">
       <div className="flex justify-between">
-        <h1>Logo</h1>
-        <ul className="hidden ss:flex">
+        <img src={logo} alt="logo" className="white max-w-[50px]" />
+        <ul className="hidden items-center ss:flex">
           {NavLinks.map((links: navlinks, index: number) => (
             <li
               key={links.id}
@@ -23,7 +23,7 @@ const NavigationBar = () => {
         <img
           src={!hamburger ? menuopen : menuclose}
           alt={menuopen}
-          className="filter-black ss:hidden"
+          className="white ss:hidden"
           onClick={() => toggleHamburger(!hamburger)}
         />
       </div>

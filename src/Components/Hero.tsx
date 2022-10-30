@@ -12,11 +12,11 @@ const Hero = ({ herodesc }: Props) => {
         alt={authorphoto}
         className="author mb-10 max-w-[250px] rounded-full ss:max-w-[450px] sm:mb-0 sm:mr-10"
       />
-      <div className="flex flex-col justify-center">
+      <div className="flex min-h-[200px] flex-col justify-center">
         <h1 className="pulse text-4xl font-black text-white">
           I am Al Nickelzon.
         </h1>
-        <p className="hero-description animation-in-3s text-xl">
+        <p className="hero-description animation-in-3s max-w-[250px] text-xl">
           {herodesc[0]}
         </p>
       </div>

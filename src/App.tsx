@@ -1,4 +1,3 @@
-import React from "react";
 import NavigationBar from "./Components/NavigationBar";
 import Hero from "./Components/Hero";
 import Education from "./Components/Education";
@@ -8,11 +7,15 @@ const App = () => {
   const herodesc: string[] = [
     "Self taught React Developer.",
     "Graphic Designer.",
+    "Musician who did not study music theory.",
+    "Photographer.",
+    "Video Editor.",
+    "Enthusiast.",
     "Overcaffeinated.",
   ];
 
-  const scroll = () => {
-    let elements: any = document.querySelectorAll(".opacity");
+  const scroll = (respond: string) => {
+    let elements: any = document.querySelectorAll(respond);
     for (var i = 0; i < elements.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = elements[i].getBoundingClientRect().top;
@@ -23,20 +26,18 @@ const App = () => {
         elements[i].classList.remove("active");
       }
     }
-    window.addEventListener("scroll", scroll);
   };
 
   let i = 0;
   setInterval(() => {
     let herosubtitles = document.querySelectorAll(".hero-description");
-    if (i === 3) {
+    if (i === 7) {
       i = 0;
     }
-
     herosubtitles[0].innerHTML = herodesc[i];
 
     i += 1;
-  }, 2000);
+  }, 4000);
 
   return (
     <div className="rootdiv w-full">
