@@ -21,7 +21,7 @@ export const ProjectLinks = [
     id: 0,
     src: notification,
     title: "Notification Page",
-    url: "",
+    url: "https://nickelzon.github.io/notifications-page-main/",
     description:
       "This is my first challenge from Frontend Mentor. After i finished this project, I started working out my UI's to become more responsive.",
   },
@@ -29,7 +29,7 @@ export const ProjectLinks = [
     id: 1,
     src: tip,
     title: "Tip Calculator App",
-    url: "",
+    url: "https://nickelzon.github.io/tip-calculator-app/",
     description:
       "This is also a challenge from Frontend Mentor. It has a simple algorithm that I code to calculate tips, and be able to split the tip base on how many persons.",
   },
@@ -37,7 +37,7 @@ export const ProjectLinks = [
     id: 2,
     src: landingpage,
     title: "Sample Landing Page",
-    url: "",
+    url: "https://nickelzon.github.io/intro-section-with-dropdown-nav/",
     description: "This is garbage.",
   },
 ];

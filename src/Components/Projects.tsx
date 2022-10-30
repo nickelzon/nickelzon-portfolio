@@ -6,11 +6,14 @@ const Projects = () => {
       <h1 className="my-20 text-2xl font-extrabold text-orange-500">
         Projects
       </h1>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 px-3 sm:grid-cols-2 md:grid-cols-3">
         {ProjectLinks.map((link: any, index: any) => (
           <div
             key={link.id}
             className={`grid-items flex max-w-sm flex-col rounded-sm bg-slate-200`}
+            onClick={() => {
+              location.href = link.url;
+            }}
           >
             <img src={link.src} alt={link.src} className={`max-w-sm`} />
 
