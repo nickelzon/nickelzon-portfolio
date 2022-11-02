@@ -1,4 +1,4 @@
-import { landingpage, notification, tip } from "../Assets/index";
+import { landingpage, notification, tip, testimonials } from "../Assets/index";
 
 const NavLinks = [
   { id: 0, title: "Contacts", url: "" },
@@ -38,7 +38,16 @@ export const ProjectLinks = [
     src: landingpage,
     title: "Sample Landing Page",
     url: "https://nickelzon.github.io/intro-section-with-dropdown-nav/",
-    description: "This is garbage.",
+    description:
+      "Another challenge from Frontend Mentor. This helped me to get a little more idea in layouting websites. Not bad for a first time creating a landingpage right? or It is that bad hmm?",
+  },
+  {
+    id: 3,
+    src: testimonials,
+    title: "Testimonial API",
+    url: "https://nickelzon.github.io/testimonials/",
+    description:
+      "After learning about fetching data from an API, and undestanding a popular architecture for an API (REST - Representational State Transfer) also known as RESTful API, I started working on this simple project that highlights just one of the method you can do to fetch data (GET).",
   },
 ];
 
