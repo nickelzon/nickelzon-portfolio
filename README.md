@@ -1,29 +1,7 @@
-# template-vite-react-ts-tailwind-v3
+### This Portfolio is under development but publicly displayed already to show some project that it contains.
 
-- **template of:** vite + react + typescript
-- **tailwindcss:** v3.x
+Click the badge to redirect
 
-## Started
-```bash
-yarn
-# or `npm install`
-```
-
----
-## Develop
-```bash
-yarn dev
-# or `npm run dev`
-```
-
----
-## Build
-```bash
-yarn build
-# or `npm run build`
-```
-
----
-<p align="center">
-<img src="./powered-by-vitawind-bright.png">
-</p>
+<a href="https://nickelzon.github.io/nickelzon-portfolio/"> 
+    <img src="https://img.shields.io/badge/nickelzon-portfolio-orange?style=for-the-badge& title="portfolio"  alt="portfolio"/>
+</a>
