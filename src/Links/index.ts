@@ -1,4 +1,10 @@
-import { landingpage, notification, tip, testimonials } from "../Assets/index";
+import {
+  landingpage,
+  notification,
+  tip,
+  testimonials,
+  emailui,
+} from "../Assets/index";
 
 const NavLinks = [
   { id: 0, title: "Contacts", url: "" },
@@ -48,6 +54,14 @@ export const ProjectLinks = [
     url: "https://nickelzon.github.io/testimonials/",
     description:
       "After learning about fetching data from an API, and undestanding a popular architecture for an API (REST - Representational State Transfer) also known as RESTful API, I started working on this simple project that highlights just one of the method you can do to fetch data (GET).",
+  },
+  {
+    id: 4,
+    src: emailui,
+    title: "Email UI",
+    url: "https://nickelzon.github.io/email-ui-functional-responsive/",
+    description:
+      "This project is an exam for my application for LOPHILS.INC as React Developer. (Hope they hire meee uwu)",
   },
 ];
 
