@@ -53,6 +53,15 @@ body {
   opacity: 1;
 }
 
+.navlinks {
+  transition: all 50ms ease-in-out;
+}
+
+.navlinks:hover {
+  transform: scale(104%);
+  transition: all 50ms ease-in-out;
+}
+
 @-webkit-keyframes slide-down {
   0% {
     -webkit-transform: translateY(-100px);

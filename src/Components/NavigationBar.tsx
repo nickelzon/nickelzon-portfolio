@@ -14,7 +14,9 @@ const NavigationBar = () => {
           {NavLinks.map((links: navlinks, index: number) => (
             <li
               key={links.id}
-              className={`${index === NavLinks.length - 1 ? "mr-0" : "mr-4"}`}
+              className={`navlinks ${
+                index === NavLinks.length - 1 ? "mr-0" : "mr-4"
+              }`}
             >
               <a href={links.url}>{links.title}</a>
             </li>
