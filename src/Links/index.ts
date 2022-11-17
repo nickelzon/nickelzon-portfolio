@@ -61,7 +61,7 @@ export const ProjectLinks = [
     title: "Email UI",
     url: "https://nickelzon.github.io/email-ui-functional-responsive/",
     description:
-      "This project is an exam for my application for LOPHILS.INC as React Developer. (Hope they hire meee uwu)",
+      "This project is an exam for my application for LOPHILS.INC as React Developer.",
   },
 ];
 
