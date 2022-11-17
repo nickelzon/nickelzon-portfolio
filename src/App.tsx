@@ -29,6 +29,7 @@ const App = () => {
     }
   };
 
+  //herodesc interval function below
   let i = 0;
   setInterval(() => {
     let herosubtitles = document.querySelectorAll(".hero-description");
@@ -40,8 +41,24 @@ const App = () => {
     i += 1;
   }, 4000);
 
+  // pointer-tracker
+  window.addEventListener("mousemove", (e) => {
+    const tracker: any = document.querySelector(".pointer-tracker");
+    tracker.style.left = `${e.clientX}px`;
+    tracker.style.top = `${e.clientY}px`;
+  });
+
+  //code break text
+  const code = "</>";
+
   return (
     <div className="rootdiv w-full">
+      {/* pointer tracker */}
+      <div className="pointer-tracker fixed z-[9999] flex items-end">
+        <span className="font-questrial text-2xl font-bold text-yellow-500">
+          {code}
+        </span>
+      </div>
       <div className="navbar-and-maincontent-container">
         <div>
           <NavigationBar />
