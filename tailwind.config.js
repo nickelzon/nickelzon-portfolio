@@ -12,6 +12,7 @@ module.exports = {
       },
       fontFamily: {
         questrial: ["Questrial"],
+        notosans: ["Noto Sans"],
       },
       colors: {
         black: "#191919",
