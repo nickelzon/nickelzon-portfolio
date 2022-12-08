@@ -1,20 +1,16 @@
+import { FC } from "react";
 import { authorphoto } from "../Assets";
 
 export interface Props {
-  herodesc: any;
+  herodesc: string[];
 }
 
-const Hero = ({ herodesc }: Props) => {
+const Hero: FC<Props> = ({ herodesc }) => {
   return (
-    <div className="hero flex flex-col items-center justify-center p-20 font-questrial text-orange-500 sm:flex-row">
-      <img
-        src={authorphoto}
-        alt={authorphoto}
-        className="author mb-10 max-w-[250px] rounded-full ss:max-w-[450px] sm:mb-0 sm:mr-10"
-      />
-      <div className="flex min-h-[200px] flex-col justify-center">
-        <h1 className="pulse text-4xl font-black text-white">
-          I am Al Nickelzon.
+    <div className="hero flex h-[100vh] flex-col items-center justify-center p-20 font-questrial text-orange-500 sm:flex-row">
+      <div className="flex min-h-[150px] flex-col">
+        <h1 className="pulse font-notosans text-4xl font-black tracking-tighter text-white">
+          I am Nickelzon.
         </h1>
         <p className="hero-description animation-in-3s max-w-[250px] text-xl">
           {herodesc[0]}
