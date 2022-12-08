@@ -7,7 +7,7 @@ import {
 } from "../Assets/index";
 
 const NavLinks = [
-  { id: 0, title: "Contacts", url: "" },
+  { id: 0, title: "About", url: "" },
   { id: 1, title: "Hire Me", url: "" },
   { id: 3, title: "Buy Me A Coffee", url: "" },
 ];
@@ -64,5 +64,12 @@ export const ProjectLinks = [
       "This project is an exam for my application for LOPHILS.INC as React Developer.",
   },
 ];
+
+export const Education = [
+  "In college, I took Bachelor of Science in Computer Science in Pangasinan State University.",
+  "I got my diploma and became a degree holder in August 2022.",
+];
+
+export const mouse = "{}";
 
 export default NavLinks;
