@@ -3,6 +3,7 @@ import Hero from "./Components/Hero";
 import Education from "./Components/Education";
 import Footer from "./Components/Footer";
 import Projects from "./Components/Projects";
+import { mouse as a } from "./Links";
 
 const App = () => {
   const herodesc: string[] = [
@@ -16,11 +17,12 @@ const App = () => {
   ];
 
   const scroll = (respond: string) => {
-    let elements: any = document.querySelectorAll(respond);
-    for (var i = 0; i < elements.length; i++) {
-      var windowHeight = window.innerHeight;
-      var elementTop = elements[i].getBoundingClientRect().top;
-      var elementVisible = 1;
+    let elements = document.querySelectorAll(respond);
+
+    for (let i = 0; i < elements.length; i++) {
+      const windowHeight = window.innerHeight;
+      const elementTop = elements[i].getBoundingClientRect().top;
+      const elementVisible = 1;
       if (elementTop < windowHeight - elementVisible) {
         elements[i].classList.add("active");
       } else {
@@ -30,7 +32,7 @@ const App = () => {
   };
 
   //herodesc interval function below
-  let i = 0;
+  let i = 1;
   setInterval(() => {
     let herosubtitles = document.querySelectorAll(".hero-description");
     if (i === 7) {
@@ -43,20 +45,18 @@ const App = () => {
 
   // pointer-tracker
   window.addEventListener("mousemove", (e) => {
-    const tracker: any = document.querySelector(".pointer-tracker");
-    tracker.style.left = `${e.clientX}px`;
-    tracker.style.top = `${e.clientY}px`;
+    const tracker: HTMLStyleElement | null =
+      document.querySelector(".pointer-tracker");
+    tracker!.style.left = `${e.clientX}px`;
+    tracker!.style.top = `${e.clientY}px`;
   });
-
-  //code break text
-  const code = "</>";
 
   return (
     <div className="rootdiv w-full">
       {/* pointer tracker */}
       <div className="pointer-tracker fixed z-[9999] flex items-end">
         <span className="font-questrial text-2xl font-bold text-yellow-500">
-          {code}
+          {a}
         </span>
       </div>
       <div className="navbar-and-maincontent-container">
