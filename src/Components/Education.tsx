@@ -11,17 +11,23 @@ const Education: FC<EducationProps> = ({ sheesh }) => {
   });
 
   return (
-    <div className="hero flex flex-col flex-wrap items-center p-5 font-questrial">
-      <span className="opacity mt-10 text-2xl font-extrabold text-orange-500">
-        Education
-      </span>
-      {e.map((text, index) => (
-        <div key={index} className="opacity education text-lg text-orange-500">
-          <span>{text}</span>
-        </div>
-      ))}
+    <div className={`${styles.parentDiv}`}>
+      <span className={`${styles.title}`}>Education</span>
+      <div>
+        {e.map((text, index) => (
+          <div key={index} className={`${styles.content}`}>
+            <span className={index === 3 ? "after:hidden" : ""}>{text}</span>
+          </div>
+        ))}
+      </div>
     </div>
   );
+};
+
+const styles = {
+  parentDiv: "hero flex flex-col flex-wrap items-center p-5 font-questrial",
+  title: "opacity mt-10 text-2xl font-extrabold text-orange-500",
+  content: "opacity education text-sm text-orange-500",
 };
 
 export default Education;
