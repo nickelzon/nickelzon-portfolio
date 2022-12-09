@@ -66,8 +66,10 @@ export const ProjectLinks = [
 ];
 
 export const Education = [
-  "In college, I took Bachelor of Science in Computer Science in Pangasinan State University.",
-  "I got my diploma and became a degree holder in August 2022.",
+  "2022 - Realized that I shoul've dropped out college and go to bootcamp instead",
+  "2022 - Graduated at Pangasinan State University",
+  "2018 - Enrolled as Bachelor of Science in Computer Science",
+  "2017 - Graduating Senior High student and excited to get to college",
 ];
 
 export const mouse = "{}";
