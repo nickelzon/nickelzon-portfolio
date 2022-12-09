@@ -4,10 +4,7 @@ import "./index.css";
 import App from "./App";
 
 window.alert("This site is under development");
+const create = React.createElement;
 
 const root = ReactDOM.createRoot(document.getElementById("root")!);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+root.render(create(React.StrictMode, null, create(App)));
