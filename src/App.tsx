@@ -44,21 +44,15 @@ const App = () => {
   }, 4000);
 
   // pointer-tracker
-  window.addEventListener("mousemove", (e) => {
-    const tracker: HTMLStyleElement | null =
-      document.querySelector(".pointer-tracker");
-    tracker!.style.left = `${e.clientX}px`;
-    tracker!.style.top = `${e.clientY}px`;
-  });
+  // window.addEventListener("mousemove", (e) => {
+  //   const tracker: HTMLStyleElement | null =
+  //     document.querySelector(".pointer-tracker");
+  //   tracker!.style.left = `${e.clientX}px`;
+  //   tracker!.style.top = `${e.clientY}px`;
+  // });
 
   return (
     <div className="rootdiv w-full">
-      {/* pointer tracker */}
-      <div className="pointer-tracker fixed z-[9999] flex items-end">
-        <span className="font-questrial text-2xl font-bold text-yellow-500">
-          {a}
-        </span>
-      </div>
       <div className="navbar-and-maincontent-container">
         <div>
           <NavigationBar />

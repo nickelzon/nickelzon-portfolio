@@ -66,7 +66,7 @@ export const ProjectLinks = [
 ];
 
 export const Education = [
-  "2022 - Realized that I shoul've dropped out college and go to bootcamp instead",
+  "2022 - Realized that I should've dropped out college and go to bootcamp instead",
   "2022 - Graduated at Pangasinan State University",
   "2018 - Enrolled as Bachelor of Science in Computer Science",
   "2017 - Graduating Senior High student and excited to get to college",
