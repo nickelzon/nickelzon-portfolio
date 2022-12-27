@@ -5,7 +5,12 @@ import Footer from "./Components/Footer";
 import Projects from "./Components/Projects";
 import { mouse as a } from "./Links";
 
+import { useState } from "react";
+import Prompt from "./Components/Prompt";
+
 const App = () => {
+  const [prompt, setPrompt] = useState(true);
+
   const herodesc: string[] = [
     "Self taught React Developer.",
     "Graphic Designer.",
@@ -51,8 +56,11 @@ const App = () => {
   //   tracker!.style.top = `${e.clientY}px`;
   // });
 
+  const alert = () => setPrompt((prev) => !prev);
+
   return (
-    <div className="rootdiv w-full">
+    <div className="rootdiv w-[100vw]">
+      {prompt ? <Prompt trigger={alert} /> : null}
       <div className="navbar-and-maincontent-container">
         <div>
           <NavigationBar />
