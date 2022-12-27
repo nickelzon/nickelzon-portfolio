@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const NavigationBar = () => {
   type navlinks = { id: number; title: string; url: string };
-  const [hamburger, toggleHamburger]: any = useState(false);
+  const [hamburger, toggleHamburger] = useState(false);
 
   return (
     <div className="bg-orange-700 p-5 font-questrial text-white">
