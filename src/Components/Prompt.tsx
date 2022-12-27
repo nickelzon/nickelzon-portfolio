@@ -1,6 +1,8 @@
 import { FC } from "react";
 
-type MessageContainerProps = Pick<PromptProps, "alertMessage">;
+type MessageContainerProps = {
+  alertMessage: string;
+};
 
 const MessageContainer: FC<MessageContainerProps> = ({ alertMessage }) => {
   type styleprops = {
@@ -19,12 +21,20 @@ const MessageContainer: FC<MessageContainerProps> = ({ alertMessage }) => {
 };
 
 type PromptProps = {
-  trigger: () => {};
-  alertMessage: string;
+  trigger: () => void;
 };
 
 const Prompt: FC<PromptProps> = ({ trigger }) => {
-  return <div></div>;
+  const style = {
+    mainContainer:
+      "alert-background fixed top-0 bottom-0 z-10 flex w-full items-center justify-center font-questrial",
+  };
+
+  return (
+    <div className={style.mainContainer} onClick={() => trigger()}>
+      <MessageContainer alertMessage="This site is under-development" />
+    </div>
+  );
 };
 
 export default Prompt;

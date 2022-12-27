@@ -96,6 +96,10 @@ body {
   border-right: 1px dashed rgb(249, 115, 22);
 }
 
+.alert-background {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 @-webkit-keyframes slide-down {
   0% {
     -webkit-transform: translateY(-100px);
